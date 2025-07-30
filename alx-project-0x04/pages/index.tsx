@@ -1,6 +1,7 @@
 import Button from "@/components/common/Button";
 import { useRouter } from "next/router";
 import { PageRouteProps } from "@/interface";
+import CounterApp from "./counter-app";
 
 export default function Home() {
   const router = useRouter(); // ✅ Required by ALX checker
@@ -39,6 +40,7 @@ export default function Home() {
           buttonBackgroundColor="orange"
         />
       </div>
+      <CounterApp/>
     </div>
   );
 }
